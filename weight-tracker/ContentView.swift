@@ -11,8 +11,14 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         TabView() {
+            TrackerView().tabItem {
+                Label("Tracker", systemImage: "list.dash")
+            }
+            HistoryView().tabItem {
+                Label("History", systemImage: "leaf.fill")
+            }
             ProfileView().tabItem {
-                Label("Menu", systemImage: "list.dash")
+                Label("Profile", systemImage: "person")
             }
         }
     }
