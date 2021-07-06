@@ -18,7 +18,7 @@ struct ContentView: View {
                 Label("History", systemImage: "leaf.fill")
             }
             ProfileView().tabItem {
-                Label("Profile", systemImage: "person")
+                    Label("Profile", systemImage: "person")
             }
         }
     }

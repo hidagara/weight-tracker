@@ -20,6 +20,10 @@
 		DDDD7C022690E97A0076031D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C012690E97A0076031D /* HistoryView.swift */; };
 		DDDD7C042690E9EA0076031D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C032690E9EA0076031D /* LoginView.swift */; };
 		DDDD7C062690E9F40076031D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C052690E9F40076031D /* OnboardingView.swift */; };
+		DDDD7C092694CCB00076031D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C082694CCB00076031D /* NetworkManager.swift */; };
+		DDDD7C0B2694DF530076031D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C0A2694DF530076031D /* Models.swift */; };
+		DDDD7C0D2694E0A60076031D /* StringSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */; };
+		DDDD7C102694EA280076031D /* Roman Guseynov.cer in Resources */ = {isa = PBXBuildFile; fileRef = DDDD7C0F2694EA280076031D /* Roman Guseynov.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +71,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				DDA9F2E526888E40002DE5D3 /* weight-tracker-app-clip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +94,11 @@
 		DDDD7C012690E97A0076031D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DDDD7C032690E9EA0076031D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DDDD7C052690E9F40076031D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DDDD7C082694CCB00076031D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DDDD7C0A2694DF530076031D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSubscriber.swift; sourceTree = "<group>"; };
+		DDDD7C0E2694E4C90076031D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DDDD7C0F2694EA280076031D /* Roman Guseynov.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roman Guseynov.cer"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 		DDA9F280268882FB002DE5D3 = {
 			isa = PBXGroup;
 			children = (
+				DDDD7C0F2694EA280076031D /* Roman Guseynov.cer */,
 				DDA9F28B268882FB002DE5D3 /* weight-tracker */,
 				DDA9F2A1268882FC002DE5D3 /* weight-trackerTests */,
 				DDA9F2AB268882FC002DE5D3 /* weight-trackerUITests */,
@@ -158,9 +167,6 @@
 				DDA9F289268882FB002DE5D3 /* weight-tracker.app */,
 				DDA9F29E268882FC002DE5D3 /* weight-trackerTests.xctest */,
 				DDA9F2A8268882FC002DE5D3 /* weight-trackerUITests.xctest */,
-				DDA9F2BD26888E3F002DE5D3 /* weight-tracker-app-clip.app */,
-				DDA9F2D326888E40002DE5D3 /* weight-tracker-app-clipTests.xctest */,
-				DDA9F2DD26888E40002DE5D3 /* weight-tracker-app-clipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 		DDA9F28B268882FB002DE5D3 /* weight-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				DDDD7C0E2694E4C90076031D /* Info.plist */,
+				DDDD7C072694CCA00076031D /* Network */,
 				DDA9F28C268882FB002DE5D3 /* weight_trackerApp.swift */,
 				DDA9F28E268882FB002DE5D3 /* ContentView.swift */,
 				DDA9F290268882FC002DE5D3 /* Assets.xcassets */,
@@ -179,6 +187,8 @@
 				DDDD7C012690E97A0076031D /* HistoryView.swift */,
 				DDDD7C032690E9EA0076031D /* LoginView.swift */,
 				DDDD7C052690E9F40076031D /* OnboardingView.swift */,
+				DDDD7C0A2694DF530076031D /* Models.swift */,
+				DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */,
 			);
 			path = "weight-tracker";
 			sourceTree = "<group>";
@@ -210,12 +220,6 @@
 		DDA9F2BE26888E3F002DE5D3 /* weight-tracker-app-clip */ = {
 			isa = PBXGroup;
 			children = (
-				DDA9F2BF26888E3F002DE5D3 /* weight_tracker_app_clipApp.swift */,
-				DDA9F2C126888E3F002DE5D3 /* ContentView.swift */,
-				DDA9F2C326888E40002DE5D3 /* Assets.xcassets */,
-				DDA9F2C826888E40002DE5D3 /* Persistence.swift */,
-				DDA9F2CD26888E40002DE5D3 /* Info.plist */,
-				DDA9F2CE26888E40002DE5D3 /* weight_tracker_app_clip.entitlements */,
 				DDA9F2CA26888E40002DE5D3 /* weight_tracker_app_clip.xcdatamodeld */,
 				DDA9F2C526888E40002DE5D3 /* Preview Content */,
 			);
@@ -225,7 +229,6 @@
 		DDA9F2C526888E40002DE5D3 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DDA9F2C626888E40002DE5D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -233,7 +236,6 @@
 		DDA9F2D626888E40002DE5D3 /* weight-tracker-app-clipTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDA9F2D726888E40002DE5D3 /* weight_tracker_app_clipTests.swift */,
 			);
 			path = "weight-tracker-app-clipTests";
 			sourceTree = "<group>";
@@ -241,9 +243,16 @@
 		DDA9F2E026888E40002DE5D3 /* weight-tracker-app-clipUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DDA9F2E126888E40002DE5D3 /* weight_tracker_app_clipUITests.swift */,
 			);
 			path = "weight-tracker-app-clipUITests";
+			sourceTree = "<group>";
+		};
+		DDDD7C072694CCA00076031D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD7C082694CCB00076031D /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +327,6 @@
 			);
 			name = "weight-tracker-app-clip";
 			productName = "weight-tracker-app-clip";
-			productReference = DDA9F2BD26888E3F002DE5D3 /* weight-tracker-app-clip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 		DDA9F2D226888E40002DE5D3 /* weight-tracker-app-clipTests */ = {
@@ -336,7 +344,6 @@
 			);
 			name = "weight-tracker-app-clipTests";
 			productName = "weight-tracker-app-clipTests";
-			productReference = DDA9F2D326888E40002DE5D3 /* weight-tracker-app-clipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DDA9F2DC26888E40002DE5D3 /* weight-tracker-app-clipUITests */ = {
@@ -354,7 +361,6 @@
 			);
 			name = "weight-tracker-app-clipUITests";
 			productName = "weight-tracker-app-clipUITests";
-			productReference = DDA9F2DD26888E40002DE5D3 /* weight-tracker-app-clipUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -421,6 +427,7 @@
 			files = (
 				DDA9F294268882FC002DE5D3 /* Preview Assets.xcassets in Resources */,
 				DDA9F291268882FC002DE5D3 /* Assets.xcassets in Resources */,
+				DDDD7C102694EA280076031D /* Roman Guseynov.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,8 +449,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA9F2C726888E40002DE5D3 /* Preview Assets.xcassets in Resources */,
-				DDA9F2C426888E40002DE5D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,12 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDD7C0B2694DF530076031D /* Models.swift in Sources */,
 				DDDD7C022690E97A0076031D /* HistoryView.swift in Sources */,
 				DDA9F296268882FC002DE5D3 /* Persistence.swift in Sources */,
+				DDDD7C092694CCB00076031D /* NetworkManager.swift in Sources */,
 				DDA9F28F268882FB002DE5D3 /* ContentView.swift in Sources */,
 				DDDD7C062690E9F40076031D /* OnboardingView.swift in Sources */,
 				DDDD7BFE2690E9640076031D /* ProfileView.swift in Sources */,
 				DDA9F299268882FC002DE5D3 /* weight_tracker.xcdatamodeld in Sources */,
+				DDDD7C0D2694E0A60076031D /* StringSubscriber.swift in Sources */,
 				DDA9F28D268882FB002DE5D3 /* weight_trackerApp.swift in Sources */,
 				DDDD7C042690E9EA0076031D /* LoginView.swift in Sources */,
 				DDDD7C002690E96E0076031D /* TrackerView.swift in Sources */,
@@ -500,10 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA9F2C926888E40002DE5D3 /* Persistence.swift in Sources */,
-				DDA9F2C226888E3F002DE5D3 /* ContentView.swift in Sources */,
-				DDA9F2CC26888E40002DE5D3 /* weight_tracker_app_clip.xcdatamodeld in Sources */,
-				DDA9F2C026888E3F002DE5D3 /* weight_tracker_app_clipApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +515,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA9F2D826888E40002DE5D3 /* weight_tracker_app_clipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA9F2E226888E40002DE5D3 /* weight_tracker_app_clipUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +684,10 @@
 				DEVELOPMENT_TEAM = WSRUWJK48Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weight-tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "weight-tracker";
+				INFOPLIST_KEY_CFBundleName = "weight-tracker";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -713,6 +719,10 @@
 				DEVELOPMENT_TEAM = WSRUWJK48Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weight-tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "weight-tracker";
+				INFOPLIST_KEY_CFBundleName = "weight-tracker";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1072,9 +1082,7 @@
 		DDA9F2CA26888E40002DE5D3 /* weight_tracker_app_clip.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DDA9F2CB26888E40002DE5D3 /* weight_tracker_app_clip.xcdatamodel */,
 			);
-			currentVersion = DDA9F2CB26888E40002DE5D3 /* weight_tracker_app_clip.xcdatamodel */;
 			path = weight_tracker_app_clip.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
