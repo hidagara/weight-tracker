@@ -10,11 +10,10 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         VStack {
-            Label("Profile", systemImage: "person")
             Button("Tap me", action: {
                 print("tapp")
                 NetworkManager().test()
-            })
+            }).buttonStyle(.bordered)
         }
     }
 }

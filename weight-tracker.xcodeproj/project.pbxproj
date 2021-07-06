@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DDA9F28D268882FB002DE5D3 /* weight_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9F28C268882FB002DE5D3 /* weight_trackerApp.swift */; };
-		DDA9F28F268882FB002DE5D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9F28E268882FB002DE5D3 /* ContentView.swift */; };
+		DDA9F28F268882FB002DE5D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9F28E268882FB002DE5D3 /* MainView.swift */; };
 		DDA9F291268882FC002DE5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA9F290268882FC002DE5D3 /* Assets.xcassets */; };
 		DDA9F294268882FC002DE5D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA9F293268882FC002DE5D3 /* Preview Assets.xcassets */; };
 		DDA9F296268882FC002DE5D3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9F295268882FC002DE5D3 /* Persistence.swift */; };
@@ -24,6 +24,7 @@
 		DDDD7C0B2694DF530076031D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C0A2694DF530076031D /* Models.swift */; };
 		DDDD7C0D2694E0A60076031D /* StringSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */; };
 		DDDD7C102694EA280076031D /* Roman Guseynov.cer in Resources */ = {isa = PBXBuildFile; fileRef = DDDD7C0F2694EA280076031D /* Roman Guseynov.cer */; };
+		DDDD7C15269513A20076031D /* DailyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD7C14269513A20076031D /* DailyWeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,7 @@
 /* Begin PBXFileReference section */
 		DDA9F289268882FB002DE5D3 /* weight-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weight-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA9F28C268882FB002DE5D3 /* weight_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weight_trackerApp.swift; sourceTree = "<group>"; };
-		DDA9F28E268882FB002DE5D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDA9F28E268882FB002DE5D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DDA9F290268882FC002DE5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA9F293268882FC002DE5D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDA9F295268882FC002DE5D3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSubscriber.swift; sourceTree = "<group>"; };
 		DDDD7C0E2694E4C90076031D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DDDD7C0F2694EA280076031D /* Roman Guseynov.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roman Guseynov.cer"; sourceTree = "<group>"; };
+		DDDD7C14269513A20076031D /* DailyWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,20 +176,16 @@
 		DDA9F28B268882FB002DE5D3 /* weight-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				DDDD7C0E2694E4C90076031D /* Info.plist */,
+				DDDD7C13269513730076031D /* Models */,
 				DDDD7C072694CCA00076031D /* Network */,
+				DDDD7C12269510DE0076031D /* UI */,
+				DDDD7C11269510D50076031D /* Resources */,
+				DDDD7C0E2694E4C90076031D /* Info.plist */,
 				DDA9F28C268882FB002DE5D3 /* weight_trackerApp.swift */,
-				DDA9F28E268882FB002DE5D3 /* ContentView.swift */,
 				DDA9F290268882FC002DE5D3 /* Assets.xcassets */,
 				DDA9F295268882FC002DE5D3 /* Persistence.swift */,
 				DDA9F297268882FC002DE5D3 /* weight_tracker.xcdatamodeld */,
 				DDA9F292268882FC002DE5D3 /* Preview Content */,
-				DDDD7BFD2690E9640076031D /* ProfileView.swift */,
-				DDDD7BFF2690E96E0076031D /* TrackerView.swift */,
-				DDDD7C012690E97A0076031D /* HistoryView.swift */,
-				DDDD7C032690E9EA0076031D /* LoginView.swift */,
-				DDDD7C052690E9F40076031D /* OnboardingView.swift */,
-				DDDD7C0A2694DF530076031D /* Models.swift */,
 				DDDD7C0C2694E0A60076031D /* StringSubscriber.swift */,
 			);
 			path = "weight-tracker";
@@ -253,6 +251,35 @@
 				DDDD7C082694CCB00076031D /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DDDD7C11269510D50076031D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDDD7C12269510DE0076031D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DDA9F28E268882FB002DE5D3 /* MainView.swift */,
+				DDDD7BFD2690E9640076031D /* ProfileView.swift */,
+				DDDD7BFF2690E96E0076031D /* TrackerView.swift */,
+				DDDD7C012690E97A0076031D /* HistoryView.swift */,
+				DDDD7C032690E9EA0076031D /* LoginView.swift */,
+				DDDD7C052690E9F40076031D /* OnboardingView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DDDD7C13269513730076031D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD7C0A2694DF530076031D /* Models.swift */,
+				DDDD7C14269513A20076031D /* DailyWeight.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +504,8 @@
 				DDDD7C022690E97A0076031D /* HistoryView.swift in Sources */,
 				DDA9F296268882FC002DE5D3 /* Persistence.swift in Sources */,
 				DDDD7C092694CCB00076031D /* NetworkManager.swift in Sources */,
-				DDA9F28F268882FB002DE5D3 /* ContentView.swift in Sources */,
+				DDA9F28F268882FB002DE5D3 /* MainView.swift in Sources */,
+				DDDD7C15269513A20076031D /* DailyWeight.swift in Sources */,
 				DDDD7C062690E9F40076031D /* OnboardingView.swift in Sources */,
 				DDDD7BFE2690E9640076031D /* ProfileView.swift in Sources */,
 				DDA9F299268882FC002DE5D3 /* weight_tracker.xcdatamodeld in Sources */,
@@ -693,7 +721,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,7 +756,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
